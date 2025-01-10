@@ -48,35 +48,35 @@ This is the API documentation for the Fresh Slate project. The API allows you to
 
 ### Goals
 
-- **List all goals**: `GET /api/goals/`
-- **Create a new goal**: `POST /api/goals/`
-- **Retrieve a goal**: `GET /api/goals/{id}/`
-- **Update a goal**: `PUT /api/goals/{id}/`
-- **Delete a goal**: `DELETE /api/goals/{id}/`
+- **List all goals**: `GET /goals/`
+- **Create a new goal**: `POST /goals/`
+- **Retrieve a goal**: `GET /goals/{id}/`
+- **Update a goal**: `PUT /goals/{id}/`
+- **Delete a goal**: `DELETE /goals/{id}/`
 
 ### Milestones
 
-- **List all milestones**: `GET /api/milestones/`
-- **Create a new milestone**: `POST /api/milestones/`
-- **Retrieve a milestone**: `GET /api/milestones/{id}/`
-- **Update a milestone**: `PUT /api/milestones/{id}/`
-- **Delete a milestone**: `DELETE /api/milestones/{id}/`
+- **List all milestones**: `GET /milestones/`
+- **Create a new milestone**: `POST /milestones/`
+- **Retrieve a milestone**: `GET /milestones/{id}/`
+- **Update a milestone**: `PUT /milestones/{id}/`
+- **Delete a milestone**: `DELETE /milestones/{id}/`
 
 ### Daily Progress
 
-- **List all daily progress**: `GET /api/daily-progress/`
-- **Create a new daily progress**: `POST /api/daily-progress/`
-- **Retrieve a daily progress**: `GET /api/daily-progress/{id}/`
-- **Update a daily progress**: `PUT /api/daily-progress/{id}/`
-- **Delete a daily progress**: `DELETE /api/daily-progress/{id}/`
+- **List all daily progress**: `GET /daily-progress/`
+- **Create a new daily progress**: `POST /daily-progress/`
+- **Retrieve a daily progress**: `GET /daily-progress/{id}/`
+- **Update a daily progress**: `PUT /daily-progress/{id}/`
+- **Delete a daily progress**: `DELETE /daily-progress/{id}/`
 
 ### Productivity Patterns
 
-- **List all productivity patterns**: `GET /api/productivity-patterns/`
-- **Create a new productivity pattern**: `POST /api/productivity-patterns/`
-- **Retrieve a productivity pattern**: `GET /api/productivity-patterns/{id}/`
-- **Update a productivity pattern**: `PUT /api/productivity-patterns/{id}/`
-- **Delete a productivity pattern**: `DELETE /api/productivity-patterns/{id}/`
+- **List all productivity patterns**: `GET /productivity-patterns/`
+- **Create a new productivity pattern**: `POST /productivity-patterns/`
+- **Retrieve a productivity pattern**: `GET /productivity-patterns/{id}/`
+- **Update a productivity pattern**: `PUT /productivity-patterns/{id}/`
+- **Delete a productivity pattern**: `DELETE /productivity-patterns/{id}/`
 
 ## API Documentation
 
