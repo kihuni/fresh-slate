@@ -4,7 +4,7 @@ from .models import Goal, Milestone, DailyProgress, ProductivityPattern
 class GoalSerializer(serializers.ModelSerializer):
     class Meta:
         model = Goal
-        fields = '__all__'
+        fields = ['id', 'title', 'description', 'priority', 'status', 'created_at', 'target_date', 'completed', 'parent_goal']
 
 class MilestoneSerializer(serializers.ModelSerializer):
     class Meta:

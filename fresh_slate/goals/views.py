@@ -29,6 +29,9 @@ class GoalViewSet(viewsets.ModelViewSet):
     def get_queryset(self):
         return Goal.objects.filter(user=self.request.user)
 
+    def perform_create(self, serializer):
+        serializer.save(user=self.request.user)
+
     @action(detail=True, methods=['post'])
     def evolve(self, request, pk=None):
         """Evolve a goal based on progress and create a new version"""
@@ -47,6 +50,13 @@ class GoalViewSet(viewsets.ModelViewSet):
         original_goal.save()
         
         return Response(GoalSerializer(new_goal).data)
+
+    @action(detail=True, methods=['delete'])
+    def delete_goal(self, request, pk=None):
+        """Delete a goal and return a success message"""
+        goal = self.get_object()
+        goal.delete()
+        return Response({"detail": "Goal was deleted successfully"}, status=status.HTTP_204_NO_CONTENT)
 
 class DailyProgressViewSet(viewsets.ModelViewSet):
     permission_classes = [IsAuthenticated]
